@@ -12,3 +12,4 @@ var Hello = React.createClass({
 ReactDOM.render(<Hello />, document.getElementById('app'));
 
 require("expose?MyReactClass!./MyReactClass.js");
+require("expose?MyClass!./MyClass.js");

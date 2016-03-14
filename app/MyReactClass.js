@@ -7,3 +7,5 @@ var MyReactClass = React.createClass({
     )
   }
 });
+
+module.exports = MyReactClass;

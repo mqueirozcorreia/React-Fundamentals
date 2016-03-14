@@ -13,7 +13,13 @@ module.exports = {
     path: __dirname + '/dist',
     filename: "index_bundle.js"
   },
+  externals: {
+    // Use external version of React
+    "react": "React",
+    "react-dom": "ReactDOM"
+  },
   module: {
+    noParse: [ "react", "react-dom" ],
     loaders: [
       {test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"}
     ]
